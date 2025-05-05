@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+}
+.clock {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.task-card {
+    transition: box-shadow 0.2s;
+}
+.task-card:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+}
