@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
 body {
     background-color: #f8f9fa;
 }
@@ -6,6 +9,21 @@ body {
     --bs-text-opacity: 1;
     color: rgb(0 0 0) !important;
 }
+
+.add-task-btn {
+    position: fixed;
+    bottom: 20px;  
+    right: 20px;  
+    z-index: 1000; 
+    font-size: 1.5rem;
+
+}
+
+.logo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+}
+
 
 .clock {
     font-size: 2rem;

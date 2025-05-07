@@ -85,29 +85,34 @@ function renderTasks(tasks) {
         col.className = 'col-md-6 col-lg-4';
 
         col.innerHTML = `
-            <div class="card task-card border-${task.isDone ? 'success' : 'secondary'}">
-    <div class="card-body d-flex flex-column">
-        <h2 class="card-title d-flex justify-content-between align-items-center" ${task.isDone ? 'style=color:grey;' : ''}>
-            ${task.title}
-            <div class="form-check form-switch">
-                <input class="form-check-input task-toggle" type="checkbox" aria-label="taskToggle" data-id="${task.id}" ${task.isDone ? 'checked' : ''}>
-            </div>
-        </h2>
-        <p class="card-text" ${task.isDone ? 'style=color:grey;' : ''}>${task.description}</p>
+        <div class="card task-card border-${task.isDone ? 'success' : 'secondary'}">
+            <div class="card-body d-flex flex-column">
+                <h2 class="card-title d-flex justify-content-between align-items-center" ${task.isDone ? 'style=color:grey;' : ''}>
+                    ${task.title}
+                    <div class="form-check form-switch">
+                        <input class="form-check-input task-toggle" type="checkbox" aria-label="taskToggle" data-id="${task.id}" ${task.isDone ? 'checked' : ''}>
+                    </div>
+                </h2>
+                <p class="card-text" ${task.isDone ? 'style=color:grey;' : ''}>${task.description}</p>
         
-        <!-- Footer (these 3 elements will be pushed to the bottom) -->
-        <div class="mt-auto">
-            <p class="text-muted"><small>Created: ${new Date(task.createdAt).toLocaleString()}</small></p>
-            <span class="w-100 badge bg-${task.isDone ? 'success' : 'warning'}">
-                ${task.isDone ? '✅ Done' : '❌ Not done'}
-            </span>
-            <div class="mt-3 d-flex justify-content-end gap-2">
-                <button class="btn btn-sm btn-outline-secondary edit-btn" data-id="${task.id}">✏️ Edit</button>
-                <button class="btn btn-sm btn-outline-danger delete-btn" data-id="${task.id}">🗑️ Delete</button>
+                <div class="mt-auto">
+                    <p class="text-muted"><small>Created: ${new Date(task.createdAt).toLocaleString('en-US', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+        })}</small></p>
+                <span class="w-100 badge bg-${task.isDone ? 'success' : 'warning'}">
+                    ${task.isDone ? '✅ Done' : '❌ Not done'}
+                </span>
+                    <div class="mt-3 d-flex justify-content-end gap-2">
+                        <button class="btn btn-sm btn-outline-secondary edit-btn" data-id="${task.id}">✏️ Edit</button>
+                        <button class="btn btn-sm btn-outline-danger delete-btn" data-id="${task.id}">🗑️ Delete</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
         `;
         taskList.appendChild(col);
     });

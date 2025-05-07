@@ -1,0 +1,14 @@
+{
+    "name": "Taskly",
+    "short_name": "Taskly",
+    "start_url": "/frontend1-projeto-taskly/index.html",
+    "display": "standalone",
+    "background_color": "#333",
+    "theme_color": "#f8f9fa",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "any"
+        }
+    ]
+}
