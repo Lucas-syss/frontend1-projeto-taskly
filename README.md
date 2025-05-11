@@ -2,7 +2,7 @@
 
 <br>
 
-### **Descrição do website:** Website de To-do List
+### **Descrição do website:** Taskly - Your personal task manager
 
 <br>
 
@@ -13,7 +13,7 @@
 # Requisitos
 
 1. Create, Read, Update and Delete operations (). ✅
-2. Use mock api. ✅ ( scripts.js - fetchTasks() )
+2. Use mock api. ✅ ( scripts.js - fetchTasks )
 3. Use at least one native javascript API (Geolocation, DateTime, etc). ✅ ( DateTime, scripts.js - updateClock )
 4. Form to create and edit todo items, with validation. ✅
 5. Use at least one external library (An ui component library for example). ✅ ( Bootstrap, index.html )
@@ -23,9 +23,9 @@
 
 ## Bonus
 
-- Implement 1 web component. ✅
-- Also use local storage. ✅
+- Implement 1 web component. (Task cards, scripts.js - renderTasks) ✅
+- Also use local storage. (Storing tasks in local storage, fetchTasks) ✅
 - Configure PWA. ✅
-- Use canvas in some way. ❌
+- Use canvas in some way. (index.html, decorative line)✅
 
-- Apresentar projeto no portfolio desenvolvido em Web Pages
+- Apresentar projeto no portfolio desenvolvido em Web Pages ( https://lucas-syss.github.io/web_pages-portfolio/ )✅

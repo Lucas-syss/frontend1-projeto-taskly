@@ -2,6 +2,19 @@ let currentFilter = 'all';
 let allTasks = [];
 let onlineMode = true;
 
+const canvas = document.getElementById('decorativeLine');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = canvas.offsetWidth;
+
+    ctx.strokeStyle = '#dee2e6';
+    ctx.lineWidth = 2;
+
+    ctx.beginPath();
+    ctx.moveTo(0, 1); 
+    ctx.lineTo(canvas.width, 1); 
+    ctx.stroke();
+
 window.addEventListener('DOMContentLoaded', () => {
     checkOnlineStatus();
     fetchTasks();
